@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap");
+@import "tailwindcss";
+@import "./styles/animations.css";
+
+@theme {
+  --color-background: #121212;
+  --color-block: #1e1e1e;
+  --color-accent: #5e8c31;
+  --font-heading: "Press Start 2P", system-ui;
+  --font-body: "Inter", system-ui;
+}
+
+:root {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: white;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #121212;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar for Webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #333; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent); 
+}
